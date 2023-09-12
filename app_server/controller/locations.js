@@ -1,12 +1,12 @@
 const homelist = (req, res) => {
     res.render('locations-list',
       {
-        title: 'Loc8r - find a place to work with wifi',
+        title: 'post-it',
         pageHeader: {
-          title: 'Loc8r',
-          strapLine: 'Find places to work with wifi near you!'
+          title: 'post-it',
+          
         },
-        sidebar: "Looking for wifi and a seat? Loc8r helps you find places to work when out and about. Perhaps with coffee, cake or a pint? Let Loc8r help you find the place you're looking for.",
+        sidebar: "Looking for wifi and a seat? Post-it helps you find places to work when out and about. Perhaps with coffee, cake or a pint? Let Post-it help you find the place you're looking for.",
         locations: [
           {
             name: 'Starcups',
@@ -39,10 +39,10 @@ const homelist = (req, res) => {
       {
         title: 'Starcups',
          pageHeader: {
-          title: 'Loc8r',
+          title: 'Post-it',
         },
         sidebar: {
-          context: 'is on Loc8r because it has accessible wifi and space to sit down with your laptop and get some work done.',
+          context: 'is on Post-it because it has accessible wifi and space to sit down with your laptop and get some work done.',
           callToAction: 'If you\'ve been and you like it - or if you don\'t - please leave a review to help other people just like you.'
         },
         location: {
@@ -91,7 +91,7 @@ const homelist = (req, res) => {
   const addReview = (req, res) => {
     res.render('location-review-form',
       {
-        title: 'Review Starcups on Loc8r' ,
+        title: 'Review Starcups on Post-it' ,
         pageHeader: { title: 'Review Starcups' }
       }
     );
